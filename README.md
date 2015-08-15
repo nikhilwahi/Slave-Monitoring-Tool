@@ -137,6 +137,6 @@ http://localhost:8081/service/webapi/monitor/vm2
 
 105: "invalid arguments"
 
-SQL error numbers are the standard MySQL error numbers.
+If there is a MySQL error, the standard MySQL error code is displayed.
 
 Complete error messages are displayed along with the error number.
