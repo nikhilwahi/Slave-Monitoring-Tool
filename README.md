@@ -21,10 +21,10 @@ http://localhost:8081/service/webapi/monitor/vm2
     output:
 		{
  			"time": "11:08:01 2015-07-15",
-  			"Slave_SQL_Running": "No",
-  			"Seconds_Behind_Master": "NULL",
+  			"Slave_SQL_Running": "YES",
+  			"Seconds_Behind_Master": "323",
   			"error": false,
-  			"Slave_IO_Running": "No",
+  			"Slave_IO_Running": "YES",
   			"Exec_Master_Log_Pos": "1053530519"
 		}
 
@@ -42,9 +42,9 @@ http://localhost:8081/service/webapi/monitor/vm2?values=seconds_behind_master&sl
     output:	
 		{
   			"time": "11:07:02 2015-07-15",
-			"Slave_SQL_Running": "No",
+			"Slave_SQL_Running": "YES",
   			"error": false,
-  			"Seconds_Behind_Master": "NULL"
+  			"Seconds_Behind_Master": "321"
 		}	
 
 
@@ -102,10 +102,10 @@ http://localhost:8081/service/webapi/monitor/vm2
   		{
  		 	"error_message": "data is old",
   			"time": "11:20:01 2015-07-15",
-  			"Slave_SQL_Running": "No",
-  			"Seconds_Behind_Master": "NULL",
+  			"Slave_SQL_Running": "YES",
+  			"Seconds_Behind_Master": "222",
   			"error": true,
-  			"Slave_IO_Running": "No",
+  			"Slave_IO_Running": "YES",
   			"Exec_Master_Log_Pos": "1053530519"
 			"error_number" : 103
 		}
@@ -123,7 +123,7 @@ http://localhost:8081/service/webapi/monitor/vm2
   			"error_message": "Access denied for user ‘temp@192.168.1.1’ (using password: YES)",
   			"time": "11:28:48 2015-07-15",
   			"error": true
-			"error_number" : 102 
+			"error_number" : 1045 
 		}
 
 
