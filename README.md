@@ -13,7 +13,8 @@ A web service makes a call to the Redis database and returns the value associate
 ## Successful Calls
 
 •To get all the data associated with a key (server name).
-•Format: http://localhost:8081/service/webapi/monitor/server_name
+
+Format: http://localhost:8081/service/webapi/monitor/server_name
 
 Example:
 http://localhost:8081/service/webapi/monitor/vm2
