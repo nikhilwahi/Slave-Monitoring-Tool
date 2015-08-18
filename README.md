@@ -1,7 +1,12 @@
 # **Slave-Monitoring-Tool**
 
-## Description
-Tool to monitor health of the slaves in a replicated MySQL database
+## Purpose
+This tool is to be used by other periodically run tasks. Based on the values being returned from the web service, these taks will decide whether or not it is safe to continue.
+
+##Setting Up
+Copy the folder "Jar Files" and make appropriate changes to the database.json file in that folder. Set up a cron task that executes this jar.
+Next, copy the web service code and set it up on a tomcat server.
+Now you simply have to make GET calls to the exposed web service.
 
 ## Detailed Working
 There is a cron which runs every minute and checks the health of the slaves. This data is stored in a Redis database with the key being the name of the slave and the value being parameters that monitor slave health along with the timestamp. The value is in the form of JSON string. The value can also be an error message if there was an error when the cron ran. 
