@@ -6,7 +6,7 @@ Tool to monitor health of the slaves in a replicated MySQL database
 ## Detailed Working
 There is a cron which runs every minute and checks the health of the slaves. This data is stored in a Redis database with the key being the name of the slave and the value being parameters that monitor slave health along with the timestamp. The value is in the form of JSON string. The value can also be an error message if there was an error when the cron ran. 
 
-A web service makes a call to the Redis database and returns the value associated with the key (server name) that has been requested. The response can either include all of the data or specific data, depending on the HTTP request. If the data in the Redis database is older than 5 minutes, an error message is sent along with the data requested.
+A web service makes a call to the Redis database and returns the value associated with the key (server name) that has been requested. The response can either include all of the data or specific data, depending on the HTTP request. If the data in the Redis database is older than 5 minutes, an error message is sent, along with the data requested.
 
 
 
